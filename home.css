@@ -61,7 +61,7 @@ button.button:hover{
 .head{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
     padding-bottom: 50px;
     margin-top: 60px ;
     margin-left: 10%;
@@ -167,7 +167,6 @@ span{
     padding: 0px 10% 0px 5%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
 }
 .container3-2{
@@ -175,10 +174,14 @@ span{
     padding: 0px 10% 0px 5%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
 }
-.img1{
+.img11{
+    padding-top: 50px;
+    width: 500px;
+    height: auto;
+}
+.img12{
     padding-top: 50px;
     width: 500px;
     height: auto;
@@ -226,9 +229,10 @@ span{
     padding: 150px 10% 0px 10%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     
 }
+
 #box1{
     background: #ffb283;
     display: flex;
@@ -258,6 +262,18 @@ span{
     font-size: 28px;
     padding: 10px 25px 0px;
 }
+@media (max-width: 1250px){
+    .container5{
+        display: flex;
+        flex-direction: column;
+    }
+    #box1, #box2{
+        max-width: 100%;
+    }
+    #box2{
+        margin-top: 50px;
+    }
+}
 #illustration1{
     padding: 100px 0px 0px;
 }
@@ -265,7 +281,7 @@ span{
     max-width: auto;
 }
 #matter{
-    padding: 80px 10px 0px;
+    padding: 80px 10px 10px;
    
 }
 .container6{
@@ -320,6 +336,7 @@ span{
     padding: 20px;
     margin: 0px 0px 10px 40px;
     max-width: 350px;
+    
 }
 .right-text2{
     border: 3px solid #33abb9;
@@ -328,6 +345,7 @@ span{
     padding: 20px;
     margin: 20px 0px 10px 60px;
     max-width: 350px;
+    
 }
 .container7{
     background-color: #f3eae5;
@@ -335,6 +353,7 @@ span{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 50px ;
+    
 }
 .card{
     background: #fff;
@@ -497,4 +516,107 @@ li{
 }
 #nav-footer a:hover{
     color: rgb(245, 252, 252);
+}
+@media (max-width: 1025px)
+{
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        order: 1;
+    }
+    .txt{
+        order: 2;
+        max-width: 80%;
+    }
+    .button1{
+        width: auto;
+    }
+    .blocks{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 50px;
+        text-align: center;
+        max-width: 80%;
+        padding-right: 0px;
+    }
+    .container3-1, .container3-2{
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+    .text1{
+        padding: 10px 0px 0px 0px;
+    }
+    .text2{
+        order: 2;
+        padding: 10px 0px 0px 0px;
+    }
+    .img1{
+        order: 1;
+    }
+    .container6{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-text1, .right-text2{
+        max-width: 100%;
+    }
+    .container7{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+    .card{
+        margin: 20px;
+    }
+    .yellow-box{
+        flex-direction: column;
+    }
+    .side-image{
+        order: 1;
+    }
+    .content-yellow-box{
+        order: 2;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #input-email,  #email-button{
+        display: block;
+        max-width: 100%;
+    }
+    #enter-email{
+        display: none;
+    }
+    .container8{
+        grid-template-columns: auto;
+        grid-template-rows:  auto auto;
+        grid-row-gap: 50px;
+    }
+    #company-name{
+        text-align: center;
+        padding-top: 0px;
+        
+    }
+    .footer{
+        padding-top: 50px;
+    }
+    #nav-footer{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+        grid-row-gap: 30px;
+    }
+    #nav-footer li{
+        margin: 30px;
+    }
 }
