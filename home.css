@@ -548,12 +548,14 @@ li{
     }
     .text1{
         padding: 10px 0px 0px 0px;
+        margin-left: 10px;
     }
     .text2{
         order: 2;
         padding: 10px 0px 0px 0px;
+        margin-left: 10px;
     }
-    .img1{
+    .img12{
         order: 1;
     }
     .container6{
