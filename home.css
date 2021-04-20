@@ -584,7 +584,7 @@ li{
     }
     .ham-navbar{
         display: inline-block;
-        margin: 35px 10px 0px 50px;
+        margin: 35px 10px 0px 0px;
         order: 2;
        
     }
@@ -695,7 +695,15 @@ li{
     #company-name{
         text-align: center;
         padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         
+    }
+    #logo-image1{
+        order: 1;
+        padding-bottom: 0px;
     }
     .footer{
         padding-top: 50px;
