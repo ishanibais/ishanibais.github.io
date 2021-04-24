@@ -1,3 +1,8 @@
+html, body
+{
+width: 100%;
+overflow-x: hidden;
+}
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -381,7 +386,7 @@ span{
 }
 .container7{
     background-color: #f3eae5;
-    padding: 150px 10% 0px 10%;
+    padding: 150px 5% 0px 5%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 50px ;
@@ -445,7 +450,7 @@ span{
 }
 .container9{
     background-color: #f3eae5;
-    padding-top: 150px;
+    padding-top: 70px;
     padding-left: 10%;
 }
 
@@ -457,6 +462,9 @@ span{
     border-radius: 5px;
    display: flex;
    flex-direction: row;
+   position: relative;
+   bottom: -50px;
+   z-index: 5;
     
 }
 .content-yellow-box{
@@ -482,7 +490,7 @@ span{
     max-width: 50%;
 }
 #input-email{
-    margin: 10px 0px 0px 30px;
+    margin: 10px 5% 0px 5%;
     display: inline-block;
     padding: 20px 15px;
     font-size: 25px;
@@ -563,10 +571,12 @@ li{
         order: 1;
         display: flex;
         flex-direction: row;
+        margin: 5px 0px 5px 30px;
     }
     #logo-name{
         font-size: 40px;
         margin-bottom: 35px;
+        margin: 20px 5px 30px 5px;
     }
     .h{
         font-size: 65px;
@@ -671,7 +681,7 @@ li{
         order: 1;
     }
     #text-yellow-box{
-        font-size: 60px;
+        font-size: 40px;
     }
     .content-yellow-box{
         order: 2;
@@ -683,6 +693,7 @@ li{
     #input-email,  #email-button{
         display: block;
         width: 90%;
+        font-size: 20px;
     }
     #enter-email{
         display: none;
@@ -707,6 +718,7 @@ li{
     }
     .footer{
         padding-top: 50px;
+        overflow-x: visible !important;
     }
     #nav-footer{
         grid-template-columns: auto auto;
@@ -716,5 +728,11 @@ li{
     }
     #nav-footer li{
         margin: 30px;
+    }
+    .ul-prop{
+        padding-right: 5px;
+    }
+    .text-div{
+        padding-left: 5px;
     }
 }
