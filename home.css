@@ -579,7 +579,7 @@ li{
         margin: 20px 5px 30px 5px;
     }
     .h{
-        font-size: 65px;
+        font-size: 57px;
     }
     #logo{
         margin-top: 35px;
@@ -609,24 +609,39 @@ li{
     .head{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
     .image{
         order: 1;
+        margin-left: 10% ;
     }
     .txt{
         order: 2;
-        max-width: 80%;
+        max-width: 100%;
+        text-align: center;
+        padding-right: 20px;
+    }
+    .t{
+        text-align: center;
+         max-width: 100%;
     }
     .button1{
         width: auto;
+    }
+    .content{
+        text-align: center;
+        font-size: 35px;
+        margin-right: 0px;
     }
     .blocks{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         grid-row-gap: 50px;
         text-align: center;
-        max-width: 80%;
-        padding-right: 0px;
+        /* max-width: 80%; */
+        padding-right: 5%;
     }
     .box{
         display: flex;
