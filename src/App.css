@@ -36,12 +36,3 @@
     transform: rotate(360deg);
   }
 }
-body {
-  background: #c21f1f;
-  color: #272222;
-}
-
-.movie-app > .row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
-}

@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Search = (props) => {
+    console.log(props.value);
     return (
-		<div className='col col-sm-4'>
+		<div className='col col-sm-5'>
 			<input
 				className='form-control'
 				value={props.value}

@@ -7,25 +7,27 @@ import Search from './components/Search';
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
-  const [movies, getMovies] = useState('');
+  const [movies, getMovies] = useState([]);
   const [value, setValue] = useState('');
  
   
-
+  useEffect(() => {
+    console.log(value);
+    getAllMovies(value);
+  }, [value]); 
 
   const getAllMovies = (value) => {
     const url = `http://www.omdbapi.com/?s=${value}&apikey=8b647d77`;
     axios.get(url)
     .then ((res) => {
-      const allMovies = res.data.Search;
+      const allMovies = res.data;
       getMovies(allMovies);
+      console.log(res.data);
     });
     
   }
   
-  useEffect(() => {
-    getAllMovies(value);
-  }, [value]); 
+
 
   return (
     <React.Fragment>
@@ -33,7 +35,7 @@ function App() {
       <div className='row d-flex align-items-center mt-4 mb-4'>
 				<Search value={value} setValue={setValue} />
 			</div>
-        <div className='row'>
+        <div className='row '>
           <MovieList movies={movies} />
         </div>
 		  </div>

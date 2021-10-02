@@ -5,19 +5,29 @@ function MovieList (props){
 
     const displayMovies = (props) =>{
         const {movies} = props;
-
-        if(movies.length > 0){
+        if (movies.length > 0){
             return (
                 movies.map( (movie, index) => {
                     console.log(movie);
                     return (
-                        <div className='image-container d-flex justify-content-start m-3'>
-					        <img src={movie.Poster} alt='movie'></img>
-				        </div>
+                        <div className="col-sm-6">
+                        <div className="card " style={{width: 18 + 'em'}}>
+                            <img className="card-img-top" src={movie.Poster} alt='movie'></img>
+                            <div className="card-body">
+                                <div className="card-text">
+                                    <h5 className="card-title text-primary"> {movie.Title}</h5>
+                                    <h6 className="card-subtitle mb-2 text-muted">Year of release - {movie.Year}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     )
-                })
+                    })
             )
-        }
+       }else {
+        return (<h4>Search for movies</h4>)
+    }    
+        
     }
     
     return (
