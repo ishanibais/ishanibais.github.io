@@ -17,11 +17,11 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(228, 182, 182);
 }
 
 .App-link {
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+body {
+  background: #c21f1f;
+  color: #272222;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
